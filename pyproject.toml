@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aldermoor"
+version = "0.1.0"
+description = "Internal fraud analytics platform for the fictional Aldermoor Bank plc"
+requires-python = ">=3.13"
+
+[tool.setuptools.packages.find]
+where = ["src"]
