@@ -1,14 +1,16 @@
 """
-A function to calculate median from a given list and return float
+Small statistical helpers used across the Aldermoor project
 """
 
-def calculate_median(values: list) -> float:
 
-    '''
-        calculate the median of any given list of numbers
-        returns a float
+def calculate_median(values: list[float]) -> float:
 
-        '''
+    """
+        Return the median of a non-empty list of numbers
+
+        Raises ValueError if values is empty. Does not modify the input.
+
+    """
     if not values:
         raise ValueError(f"Cannot calculate the median of an empty list")
 

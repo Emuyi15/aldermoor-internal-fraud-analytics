@@ -1,10 +1,11 @@
 """
-A function to standardize all set of categorical
+Text standardization helpers for aldermoor category values (roles, systems, actions). 
 """
+
+
 def standardize_text(value: str) -> str:
     '''
-        Cleans up messy categorical values
-
+        Standardise a messy category value to lowercase snake_case.
         Handles whitespace, runs of spaces, newlines,
         hyphens and repeated underscores.
     '''
